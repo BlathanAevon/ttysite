@@ -1,0 +1,42 @@
+@font-face {
+  font-family: VGA; 
+  src: url(PxPlus_IBM_VGA8.ttf); 
+}
+
+p 
+{
+  margin: 0px;
+}
+
+body 
+{
+  font-family: VGA;
+  font-size: 2rem;   
+  font-weight: 200;
+  line-height: 1.2;
+  background-color: black; 
+  color: white;
+  border: none;
+  overflow-wrap: break-word;
+}
+
+#input, #caret
+{
+  display: inline;
+  padding 0px;
+}
+
+#caret {
+  animation: blink-animation 1200ms steps(3, start) infinite;
+  -webkit-animation: blink-animation 1200ms steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
